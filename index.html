@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Payment Gateway</h1>
+  <div class="container">
+    <div id="paymentForm" class="content">
+      <h2>Payment Details</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="text" id="amount" required>
+        </div>
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  
+    <div id="receipt" class="content hidden">
+      <h2>Payment Receipt</h2>
+      <p><strong>Transaction ID:</strong> <span id="transactionIdValue"></span></p>
+      <p><strong>Name:</strong> <span id="nameValue"></span></p>
+      <p><strong>Card Number:</strong> <span id="cardNumberValue"></span></p>
+      <p><strong>Expiry Date:</strong> <span id="expiryValue"></span></p>
+      <p><strong>CVV:</strong> <span id="cvvValue"></span></p>
+      <p><strong>Amount Paid:</strong> $<span id="amountPaidValue"></span></p>
+      <p><strong>Date Paid:</strong> <span id="datePaidValue"></span></p>
+      <p><strong>Payment Method:</strong> <span id="paymentMethodValue"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
